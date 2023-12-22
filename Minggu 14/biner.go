@@ -1,17 +1,19 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	var n, i, a, c, d int
-	a = 2
+	var n int
+	var biner string
 	fmt.Scan(&n)
-	c = i
-	d = i + 1
-	for i <= n {
-		a = int(math.Pow(c, d))
+
+	for n > 0 {
+		if n%2 == 0 {
+			biner = "0" + biner
+		} else {
+			biner = "1" + biner
+		}
+		n = n / 2
 	}
+	fmt.Print("biner:", biner)
 }
