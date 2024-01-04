@@ -25,10 +25,10 @@ func main() {
 	}
 
 	if A > B && B == 0 {
-		fmt.Println("Decrease")
+		fmt.Println("descending")
 	} else if B > A && A == 0 {
-		fmt.Println("Increase")
+		fmt.Println("ascending")
 	} else if A != 0 && B != 0 {
-		fmt.Println("Unstable")
+		fmt.Println("tidak terurut")
 	}
 }

@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var n, m int
-	fmt.Scan(&n, &m)
-	N, M := n, m
+	var N, M int
+	fmt.Print("masukkan dua bilangan: ")
+	fmt.Scan(&N, &M)
+
+	n, m := N, M
 	for m != 0 {
-		N, M = M, N%M
+		n, m = m, n%m
 	}
-	kpk := (n * m) / N
-	fmt.Println(kpk)
+	kpk := (N * M) / n
+	fmt.Println("kpk:", kpk)
+
 }

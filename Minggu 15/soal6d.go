@@ -3,28 +3,27 @@ package main
 import "fmt"
 
 func main() {
-	var n, m, p, g, s, i int
-	fmt.Scan(&n)
+	var m, total, P, G, S int
 	stop := false
 	for !stop {
 		fmt.Scan(&m)
 		if m >= 200 {
-			p++
-			i++
+			fmt.Println("Platinum")
+			P++
 		} else if m >= 100 && m <= 200 {
-			g++
-			i++
+			fmt.Println("Gold")
+			G++
 		} else if m >= 50 && m <= 99 {
-			s++
-			i++
+			fmt.Println("Silver")
+			S++
 		} else {
 			fmt.Println("Invalid")
 		}
-		if i == n {
+		if total >= 500 {
 			stop = true
 		}
 	}
-	fmt.Println("Gold User: ", g)
-	fmt.Println("Silver User: ", s)
-	fmt.Println("Pl User: ", p)
+	fmt.Println("Platinum: ", P)
+	fmt.Println("Gold: ", G)
+	fmt.Println("Silver: ", S)
 }
