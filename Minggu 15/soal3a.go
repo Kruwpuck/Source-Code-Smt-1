@@ -11,7 +11,6 @@ func main() {
 	fmt.Scan(&n)
 	m = n
 	for !stop {
-
 		if n < 0 || n > 200 {
 			stop = true
 		} else {
