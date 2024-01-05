@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	var N, M int
-	fmt.Print("masukkan dua bilangan: ")
 	fmt.Scan(&N, &M)
 
 	n, m := N, M
@@ -12,6 +11,6 @@ func main() {
 		n, m = m, n%m
 	}
 	kpk := (N * M) / n
-	fmt.Println("kpk:", kpk)
+	fmt.Println(kpk)
 
 }

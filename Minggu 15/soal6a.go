@@ -6,10 +6,10 @@ func main() {
 	var n int
 	fmt.Scan(&n)
 	if n >= 200 {
-		fmt.Println("Platinum")
+		fmt.Println("Gold user")
 	} else if n >= 100 && n <= 200 {
-		fmt.Println("Gold")
+		fmt.Println("Platinum user")
 	} else {
-		fmt.Println("Silver")
+		fmt.Println("Silver user")
 	}
 }

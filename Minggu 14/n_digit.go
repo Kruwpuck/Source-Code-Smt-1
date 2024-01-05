@@ -12,7 +12,6 @@ func main() {
 			hasil = d1
 		}
 		n = n / 10
-
 	}
 	fmt.Println(hasil)
 }

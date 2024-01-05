@@ -9,18 +9,19 @@ func main() {
 	platinum := 0.0
 	silver := 0.0
 	stop := false
+
 	for !stop {
 		fmt.Scan(&m)
 		if m >= 200 {
-			p++
-			i++
-			n += m
-			platinum += float64(m)
-		} else if m >= 100 && m <= 200 {
 			g++
 			i++
 			n += m
 			gold += float64(m)
+		} else if m >= 100 && m <= 200 {
+			p++
+			i++
+			n += m
+			platinum += float64(m)
 		} else if m >= 50 && m <= 99 {
 			s++
 			i++
@@ -29,11 +30,27 @@ func main() {
 		} else {
 			fmt.Println("Invalid")
 		}
+
 		if n >= 500 {
 			stop = true
 		}
 	}
-	fmt.Println("Gold User: ", float64(gold/float64(g)))
-	fmt.Println("Silver User: ", float64(silver/float64(s)))
-	fmt.Println("Platinum User: ", float64(platinum/float64(p)))
+
+	if g != 0 {
+		fmt.Println("Gold user: ", gold/float64(g))
+	} else {
+		fmt.Println("Gold user: ")
+	}
+
+	if p != 0 {
+		fmt.Println("Platinum user: ", platinum/float64(p))
+	} else {
+		fmt.Println("Platinum user: 0")
+	}
+
+	if s != 0 {
+		fmt.Println("Silver user: ", silver/float64(s))
+	} else {
+		fmt.Println("Silver user: 0")
+	}
 }

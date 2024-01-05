@@ -9,11 +9,11 @@ func main() {
 	for !stop {
 		fmt.Scan(&m)
 		if m >= 200 {
-			p++
+			g++
 			i++
 			n += m
 		} else if m >= 100 && m <= 200 {
-			g++
+			p++
 			i++
 			n += m
 		} else if m >= 50 && m <= 99 {
@@ -27,7 +27,7 @@ func main() {
 			stop = true
 		}
 	}
-	fmt.Println("Gold User: ", g)
-	fmt.Println("Silver User: ", s)
-	fmt.Println("Pl User: ", p)
+	fmt.Println("Gold user: ", g)
+	fmt.Println("Platinum user: ", p)
+	fmt.Println("Silver user: ", s)
 }

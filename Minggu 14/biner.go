@@ -15,5 +15,5 @@ func main() {
 		}
 		n = n / 2
 	}
-	fmt.Print("biner:", biner)
+	fmt.Print(biner)
 }

@@ -26,7 +26,7 @@ func main() {
 		}
 	}
 	if A >= 6 || B >= 6 {
-		fmt.Print("Invalid")
+		fmt.Print("tidak valid")
 	} else if b {
 		fmt.Println("B")
 	} else if a {
